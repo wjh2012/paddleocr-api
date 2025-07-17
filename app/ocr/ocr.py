@@ -13,9 +13,9 @@ def predict(image):
     result = ocr.predict(
         input=image)
 
-    for res in result:
+    # for res in result:
         # res.print()
-        res.save_to_img("output")
+        # res.save_to_img("output")
         # res.save_to_json("output")
 
     return result
