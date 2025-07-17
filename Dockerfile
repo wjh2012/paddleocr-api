@@ -1,4 +1,4 @@
-FROM registry.baidubce.com/paddlepaddle/paddle:3.1.0-gpu-cuda11.8-cudnn8.9-trt8.6
+FROM paddlepaddle/paddle:3.1.0-gpu-cuda11.8-cudnn8.9
 
 # Install uv.
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
