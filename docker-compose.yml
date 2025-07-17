@@ -1,9 +1,9 @@
 services:
-  paddle-v5-test:
-    container_name: paddle-v5-test
+  paddleocr-api:
+    container_name: paddleocr-api
     build:
-      context: ./app
+      context: .
       dockerfile: Dockerfile
     ports:
-      - "1008:8000"
+      - "1006:8000"
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000
